@@ -6,16 +6,14 @@ public class Main {
         System.out.println("Hello world!");
 
 
-        // Lazy Initialization
-       /* SingletonDesignPattern ref= SingletonDesignPattern.getInstance();
+        //Lazy Initialization
+        SingletonDesignPattern ref0= SingletonDesignPattern.getInstance();
 
-        ref.getHelloWorld();*/
+        ref0.getHelloWorld();
 
         //Eager Initialization
+        SingletonDesignPatternEager ref1= SingletonDesignPatternEager.getInstance();
 
-
-        SingletonDesignPatternEager ref= SingletonDesignPatternEager.getInstance();
-
-        ref.sayHello();
+        ref1.sayHello();
     }
 }
