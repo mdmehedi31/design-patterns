@@ -2,16 +2,16 @@ package com.dp.singleton;
 
 
 
-public class SingletonDesignPatter {
+public class SingletonDesignPattern {
 
 
-    private static SingletonDesignPatter ref=null;
+    private static SingletonDesignPattern ref=null;
 
     public void getHelloWorld(){
         System.out.println("Hello this is from singleton design pattern method");
     }
 
-    private SingletonDesignPatter(){
+    private SingletonDesignPattern(){
     }
 
     /*
@@ -22,11 +22,11 @@ public class SingletonDesignPatter {
      because if one thread access this method that time we don't need synchronized.
      and also we need this at the first time,but all time we access synchronized
     */
-    public static synchronized SingletonDesignPatter getInstance(){
+    public static synchronized SingletonDesignPattern getInstance(){
 
         System.out.println("getInstance method here.....");
         if(ref==null) {
-            ref = new SingletonDesignPatter();
+            ref = new SingletonDesignPattern();
         }
         return ref;
     }

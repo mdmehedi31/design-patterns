@@ -1,12 +1,21 @@
-import com.dp.singleton.SingletonDesignPatter;
+import com.dp.singleton.SingletonDesignPattern;
+import com.dp.singleton.SingletonDesignPatternEager;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
 
-        SingletonDesignPatter ref= SingletonDesignPatter.getInstance();
+        // Lazy Initialization
+       /* SingletonDesignPattern ref= SingletonDesignPattern.getInstance();
 
-        ref.getHelloWorld();
+        ref.getHelloWorld();*/
+
+        //Eager Initialization
+
+
+        SingletonDesignPatternEager ref= SingletonDesignPatternEager.getInstance();
+
+        ref.sayHello();
     }
 }
